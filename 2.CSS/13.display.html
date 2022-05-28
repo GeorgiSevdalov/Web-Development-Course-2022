@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Display</title>
+        <style>
+            .bluebox{
+                background-color:rgb(55,87,154) ;
+                color: white;
+                height: 100px;
+                width: auto;
+                visibility: hidden; 
+                /*it's hidden but still preserving the space*/
+            }
+            .yellolbox{
+                background-color: rgb(165, 165, 42);
+                color: antiquewhite;
+                height: 100px;
+                width: auto;
+                display: none;
+            }
+            .greenbox{
+                background-color:rgb(58, 133, 58) ;
+                color: white;
+                height: 100px;
+                width: auto;
+            }
+            .great{
+                background-color:rgb(83, 19, 83) ;
+     /*whth display property we can 
+                change the way inline elements are display
+                (it's still inline but display as block element!!!!)*/
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="bluebox">
+            <p>Facebook is </p>
+        </div>
+        <div class="yellolbox">
+            <p>Apple</p>
+        </div>
+        <div class="greenbox">
+            <p>Microsoft is <span class="great">great</span></p>
+        </div>
+    </body>
+</html>
