@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>2D transforms</title>
+        <style>
+            .bluebox{
+                background-color:rgb(55,87,154) ;
+                color: white;
+                height: 100px;
+                width: 100px;
+                transform: rotate(30deg);
+                /*different browsers needs specific sintacs
+                -ms-transform: rotate(30deg);
+                -webkit-transform: rotate(30deg);*/
+            }
+            .yellolbox{
+                background-color: rgb(165, 165, 42);
+                color: antiquewhite;
+                height: 100px;
+                width: 100px;
+                transform: translate(20px, 30px);
+            }
+            .greenbox{
+                background-color:rgb(58, 133, 58) ;
+                color: white;
+                height: 100px;
+                width: 100px;
+                transform: skew(10deg,10deg);
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="bluebox">
+            <p>Facebook</p>
+        </div>
+        <div class="yellolbox">
+            <p>Apple</p>
+        </div>
+        <div class="greenbox">
+            <p>Microsoft</p>
+        </div>
+    </body>
+</html>

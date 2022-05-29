@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Animations</title>
+        <style>
+            .bluebox{
+                background-color:rgb(55,87,154) ;
+                color: white;
+                height: 100px;
+                width: 100px;
+                animation: myanimation 35s   ;
+            }
+            @-webkit-keyframes myanimation{
+                from{ background-color:rgb(55,87,154) ;}
+                to{background-color: rgb(226, 43, 43);}
+            }
+            .yellolbox{
+                background-color: rgb(165, 165, 42);
+                color: antiquewhite;
+                height: 100px;
+                width: 100px;
+                position: relative;
+                -webkit-animation: mysecondanimation 20s;
+            }
+            @-webkit-keyframes mysecondanimation{
+                0% {background-color: rgb(55,87,154); left: 0px; top: 0px;}
+                25% {background-color: rgb(55, 142, 154); left: 500px; top: 0px;}
+                50% {background-color: rgb(55, 154, 105); left: 500px; top: 300px;}
+                75% {background-color: rgb(136, 154, 55); left: 0px; top: 300px;}
+                100% {background-color: rgb(154, 70, 55); left: 0px; top: 0px;}
+            }
+            .greenbox{
+                background-color:rgb(58, 133, 58) ;
+                color: white;
+                height: 100px;
+                width: 100px;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="bluebox">
+            <p>Facebook</p>
+        </div>
+        <div class="yellolbox">
+            <p>Apple</p>
+        </div>
+        <div class="greenbox">
+            <p>Microsoft</p>
+        </div>
+    </body>
+</html>

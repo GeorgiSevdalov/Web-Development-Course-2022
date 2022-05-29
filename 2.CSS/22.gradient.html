@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Gradient</title>
+        <style>
+            .bluebox{
+                /* background-color:rgb(55,87,154) ; */
+                color: white;
+                height: 100px;
+                width: auto;
+                background: linear-gradient(rgb(55,87,154), rgb(255, 255, 255));
+                /*different browsers needs specific sintacs and we need to duplicate
+                background: -webkit-linear-gradient(rgb(55,87,154), white); --> safary
+                background: -o-linear-gradient(rgb(55,87,154), white); --->opra
+                background: -moz-linear-gradient(rgb(55,87,154), white); ---> firefox
+                */
+            }
+            .yellowbox{
+                /* background-color: rgb(165, 165, 42); */
+                color: rgb(245, 35, 35);
+                height: 100px;
+                width: auto;
+                background: linear-gradient(to bottom right, white ,rgb(165, 165, 42), rgb(58, 133, 58) );
+            }
+            .greenbox{
+                /* background-color:rgb(58, 133, 58) ; */
+                background: linear-gradient(to left, rgb(58, 133, 58, 0), rgb(58, 133, 58, 1));/*0 to 1 last digit is for opacity*/
+                color: white;
+                height: 100px;
+                width: auto;
+            }
+            .onemore{
+                background: radial-gradient(circle, rgba(175, 47, 207, 0.678), rgb(6, 6, 173), rgb(13, 139, 118));/*0 to 1 last digit is for opacity*/
+                color: white;
+                height: 100px;
+                width: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="bluebox">
+            <p>Facebook</p>
+        </div>
+        <div class="yellowbox">
+            <p>Apple</p>
+        </div>
+        <div class="greenbox">
+            <p>Microsoft</p>
+        </div>
+        <div class="onemore">
+            <p>One more</p>
+        </div>
+    </body>
+</html>
